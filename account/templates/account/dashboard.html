@@ -7,5 +7,8 @@
 
 {% block content %}
     <h1>Dashboard Page</h1>
-    <p>Welcome to your Dashboard</p>
+    <p>Welcome to your Dashboard
+        You Can <a href="{% url 'edit' %}">Edit your Profile</a>
+        You Can <a href="{% url 'password_change' %}">Chane your Password</a>
+    </p>
 {% endblock content %}
